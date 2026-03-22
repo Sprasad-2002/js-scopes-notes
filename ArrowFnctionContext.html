@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Arrow Function Context</title>
+    <script>
+        "use strict";
+        let n=10;
+        let main=()=>
+        {
+        console.log(this);
+
+        }
+    main();
+    function m1()
+    {
+        console.log(this);
+        let printmsg=()=>
+                         {
+                        console.log(this);
+         }
+    printmsg()
+    
+    }
+    m1();
+    </script>
+</head>
+<body>
+    <h1>Arrow Function Context</h1>
+</body>
+</html>

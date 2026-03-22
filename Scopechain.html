@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Scope Chain Context</title>
+    <script>
+        let n=10;
+        console.log(n);
+        function main()
+        {
+            console.log(n);
+            function m1()
+            {
+                console.log(n);
+            }
+            m1();
+        }
+    </script>
+</head>
+<body>
+    <h1>Scope Chain Context</h1>
+</body>
+</html>

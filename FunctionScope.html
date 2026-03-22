@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Function Scope</title>
+    <script>
+       
+        function Greet(){
+            let str="I am a local variable";  //Access Here
+            console.log(str);
+
+        }
+        Greet();
+        console.log(str);  //ReferenceError: str is not defined
+    </script>
+</head>
+<body>
+    <h1>Function Scope</h1>
+</body>
+</html>
